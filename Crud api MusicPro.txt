@@ -1,0 +1,270 @@
+Productos 
+
+//Todos los productos (metodo GET)
+http://home.softsolutions.cl:8080/productos
+
+//Producto por Id (metodo GET)
+http://home.softsolutions.cl:8080/producto/{id}
+
+//Crear producto (metodo POST)
+http://home.softsolutions.cl:8080/producto
+
+//Actualizar producto (metodo PUT)
+http://home.softsolutions.cl:8080/producto/{id}
+
+//Eliminar producto (metodo DELETE)
+http://home.softsolutions.cl:8080/producto/{id}
+
+
+
+//nombre de los campos del json para Crear\
+{
+    "nombre":'',
+    "descripcion":'',
+    "precio":'',
+    "imagen"''
+}
+
+
+//nombre de los campos del json para Actualizar
+{
+    "nombre": "",
+    "descripcion": "",
+    "precio": "",
+    "imagen": ""
+}
+Nota: El id del producto lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Usuarios
+
+//Todos los usuarios (metodo GET)
+http://home.softsolutions.cl:8080/usuarios
+
+//Usuario por id (metodo GET)
+http://home.softsolutions.cl:8080/usuario/{id}
+
+//Crear usuario (metodo POST)
+http://home.softsolutions.cl:8080/usuario
+
+//Actualizar usuario (metodo PUT)
+http://home.softsolutions.cl:8080/usuario{id}
+
+//Eliminar usuario (metodo DELETE)
+http://home.softsolutions.cl:8080/usuario/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    correo:'',
+    nombre:'',
+    apellido:'',
+    contrasena'',
+    tipo_cuenta:''
+}
+
+//nombre de los campos del json para Actualizar
+{
+    correo:'',
+    nombre:'',
+    apellido:'',
+    contrasena'',
+    tipo_cuenta:''
+}
+
+Nota: El id del usuario lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Venta
+
+//Todos los ventas (metodo GET)
+http://home.softsolutions.cl:8080/ventas
+
+//venta por id (metodo GET)
+http://home.softsolutions.cl:8080/venta/{id}
+
+//Crear venta (metodo POST)
+http://home.softsolutions.cl:8080/venta
+
+//Actualizar venta (metodo PUT)
+http://home.softsolutions.cl:8080/venta/{id}
+
+//Eliminar venta (metodo DELETE)
+http://home.softsolutions.cl:8080/venta/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    total_venta:'',
+    correo:'',
+}
+
+//nombre de los campos del json para Actualizar
+{
+    total_venta:'',
+    correo:'',
+}
+
+Nota: El id del la venta lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Venta Detalle
+
+//Todos los ventas detalle (metodo GET)
+http://home.softsolutions.cl:8080/ventasdetalles
+
+//venta detalle por id (metodo GET)
+http://home.softsolutions.cl:8080/ventadetalle/{id}
+
+//Crear venta detalle (metodo POST)
+http://home.softsolutions.cl:8080/ventadetalle
+
+//Actualizar venta detalle (metodo PUT)
+http://home.softsolutions.cl:8080/ventadetalle/{id}
+
+//Eliminar venta detalle (metodo DELETE)
+http://home.softsolutions.cl:8080/ventadetalle/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    cantidad:'',
+    id_producto:'',
+    id_venta:''
+}
+
+//nombre de los campos del json para Actualizar
+{
+    cantidad:'',
+    id_producto:'',
+    id_venta:''
+}
+
+Nota: El id del la venta detalle lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Stock
+
+//Todos los Stock (metodo GET)
+http://home.softsolutions.cl:8080/stocks
+
+//Stock por id (metodo GET)
+http://home.softsolutions.cl:8080/stock/{id}
+
+//Crear Stock (metodo POST)
+http://home.softsolutions.cl:8080/stock
+
+//Actualizar Stock (metodo PUT)
+http://home.softsolutions.cl:8080/stock/{id}
+
+//Eliminar Stock (metodo DELETE)
+http://home.softsolutions.cl:8080/stock/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    cantidad:'',
+    id_producto:'',
+    id_bodega:''
+}
+
+//nombre de los campos del json para Actualizar
+{
+    cantidad:'',
+    id_producto:'',
+    id_bodega:''
+}
+
+Nota: El id del la stock lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Carrito
+
+//Todos los Carrito (metodo GET)
+http://home.softsolutions.cl:8080/carritos
+
+//Carrito por id (metodo GET)
+http://home.softsolutions.cl:8080/carrito/{id}
+
+//Crear Carrito (metodo POST)
+http://home.softsolutions.cl:8080/carrito
+
+//Actualizar Carrito (metodo PUT)
+http://home.softsolutions.cl:8080/carrito/{id}
+
+//Eliminar Carrito (metodo DELETE)
+http://home.softsolutions.cl:8080/carrito/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    total_venta:'',
+    correo:''
+}
+
+//nombre de los campos del json para Actualizar
+{
+    total_venta:'',
+    correo:''
+}
+
+Nota: El id del carrito lo recibo por url 
+
+
+///////////////////////////////////////////////////////////////////////
+
+
+Carrito Detalle
+
+//Todos los Carrito Detalle (metodo GET)
+http://home.softsolutions.cl:8080/carritosDetalle
+
+//Carrito Detalle por id (metodo GET)
+http://home.softsolutions.cl:8080/carritoDetalle/{id}
+
+//Crear Carrito Detalle (metodo POST)
+http://home.softsolutions.cl:8080/carritoDetalle
+
+//Actualizar Carrito Detalle (metodo PUT)
+http://home.softsolutions.cl:8080/carritoDetalle/{id}
+
+//Eliminar Carrito Detalle (metodo DELETE)
+http://home.softsolutions.cl:8080/carritoDetalle/{id}
+
+
+
+//nombre de los campos del json para Crear
+{
+    "cantidad": '',
+    "id_producto": '',
+    "id_carrito": ''
+}
+
+//nombre de los campos del json para Actualizar
+{
+    "cantidad": '',
+    "id_producto": '',
+    "id_carrito": ''
+}
+
+Nota: El id del carrito Detalle lo recibo por url 

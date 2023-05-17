@@ -1,0 +1,32 @@
+GET http://localhost:8080/ventasdetalles
+
+###
+
+GET http://localhost:8080/ventadetalle/1
+
+###
+
+POST http://localhost:8080/ventadetalle
+Content-Type: application/json
+
+{
+    "cantidad": 2,
+    "id_producto": 1,
+    "id_venta": 100
+
+}
+
+###
+
+PUT http://localhost:8080/ventadetalle/7
+Content-Type: application/json
+
+{
+    "total_venta": 1,
+    "correo": "test@test.com"
+
+}
+
+###
+
+DELETE http://localhost:8080/ventadetalle/8

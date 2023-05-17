@@ -1,0 +1,31 @@
+GET http://localhost:8080/stocks
+
+###
+
+GET http://localhost:8080/stock/2
+
+###
+
+POST http://localhost:8080/stock
+Content-Type: application/json
+
+{
+    "cantidad": 50,
+    "id_producto": "1",
+    "id_bodega": "1"
+}
+
+###
+
+put http://localhost:8080/stock/18
+Content-Type: application/json
+
+{
+    "cantidad": 10,
+    "id_producto": "1",
+    "id_bodega": "1"
+}
+
+###
+
+DELETE http://localhost:8080/stock/16

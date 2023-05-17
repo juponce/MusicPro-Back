@@ -1,0 +1,30 @@
+GET http://localhost:8080/carritos
+
+###
+
+GET http://localhost:8080/carrito/1
+
+###
+
+POST http://home.softsolutions.cl:8080/carrito
+Content-Type: application/json
+
+{
+    "correo": "admin@admin"
+
+}
+
+###
+
+PUT http://localhost:8080/carrito/15
+Content-Type: application/json
+
+{
+    "total_venta": 1000,
+    "correo": "admin@admin"
+
+}
+
+###
+
+DELETE http://localhost:8080/carrito/8

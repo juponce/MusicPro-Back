@@ -1,0 +1,33 @@
+GET http://localhost:8080/carritosDetalle
+
+###
+
+GET http://localhost:8080/carritoDetalle/3
+
+###
+
+POST http://localhost:8080/carritoDetalle
+Content-Type: application/json
+
+{
+    "cantidad": 10,
+    "id_producto": 4,
+    "id_carrito": 15
+
+}
+
+###
+
+PUT http://localhost:8080/carritoDetalle/6
+Content-Type: application/json
+
+{
+    "cantidad": 100,
+    "id_producto": 4,
+    "id_carrito": 15
+
+}
+
+###
+
+DELETE http://localhost:8080/carritoDetalle/8
